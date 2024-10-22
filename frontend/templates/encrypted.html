@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if message %}
+        <h2>encrypted value: {{ message }}</h2>
+    {% endif %}
+
+{% if key %}
+    <h2>key: {{ key }}</h2>
+    <a href="{{ url_for('download_file') }}">
+        <button>Download Text File</button>
+    </a>
+{% endif %}
+
+</body>
+</html>
